@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>passing marks 50%</h1>
+
+
+    <form onsubmit="return false"></form>
+
+    <label for="parcent"> write your parcent</label>
+    <input type="number" id="parcent">
+    <button onclick="cheakparcent()">cheak fail or pass </button>
+
+
+    <script>
+        function cheakparcent(){
+            let userparcent = document.querySelector("#parcent").value;
+            console.log("userparcent" , userparcent)
+            alert("pass");
+         
+
+        }
+    </script>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Comparisons</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let voteable;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 18) ? "Too young" : "Old enough";
+  }
+  document.getElementById("demo").innerHTML = voteable + " to vote";
+}
+</script>
+
+</body>
+</html> -->
